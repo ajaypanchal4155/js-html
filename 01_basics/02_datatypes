@@ -15,8 +15,8 @@ let state;
 //string=""
 //boolean =true/false
 //null = standalone value
-//undefined =
+//undefined 
 // symbol = unique
 
 
-//object
+//object output of null

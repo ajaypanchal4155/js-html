@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-compatible" content="IE=edge">
+        <meta name="viewport" content="width=device,initial-scale=1.0">
+        <title>Dom | chai aur code</title>
+    </head>
+    <body style = "background-color: black; color:bisque"> 
+        <div class = "parent">
+            <!-------this is a comment-->
+            <div class ="day"> Monday </div>
+            <div class = "day"> tuesday </div>
+            <div class = "day"> wednesday </div>
+            <div class = "day"> thusday </div>
+        </div>
+    </body>
+    <script>{
+        const parent = document.queryselector('parent')
+        //console.log(parent);
+        //console.log(parent.children);
+        //console.log(parent.children[i].innerHTML);
+    }
+    parent.children[1].style.color = "orange"
+    //console.log(parent.firstElementchild);
+    //console.log(parent.lastElementChild);
+
+    const dayone = document.querySelector('day')
+    //console.log(dayone);
+    //console.log(dayone.parentElement);
+    //console.log(dayone.nextElementSibling);
+    console.log("NODES:",parent.chidNodes);
+    </script>
+</html>

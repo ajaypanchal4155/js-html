@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="UTF-8">
+        <title>event learning</title>
+    </head> 
+    <body style = "background-color:#414141; color:aliceblue;">
+        <h2>amazing images</h2>
+        <ul id ="images">
+          <li><img width ="200px" id = "photoshop" src = "https://images.pexels.com/photos/3680219/pexels-photo-3680219.jpeg" alt = "photoshop"</li>
+            <li><img width = "50px" id ="owl" src = "https://images.pexels.com/photos/86596/owl-bird-eyes-eagle-owl-86596.jpeg" alt = "owl"</li>
+            <li><img width = "50px" id= "river" src = "https://images.pexels.com/photos/1272809/pexels-photo-1272809.jpeg" alt = "river"</li>
+            <li><img width = "50px" id = "tree" src = "https://images.pexels.com/photos/1459495/pexels-photo-1459495.jpeg" alt ="tree"</li>
+            <li><img width = "50px" id ="house" src= "https://images.pexels.com/photos/186077/pexels-photo-186077.jpeg" alt = "house"</li>
+          </ul>
+        </body>
+        <script>
+           // document.getElementById('owl').onclick = function(){
+            // alert("owl clicked")
+           // }
+           //document.getElementById('owl').addEventListener('click',function(){
+            //alert("owl clicked again")
+           //})
+           //attachEvent()
+           //jQuery-on
+           //document.getElementById('owl').addEventListener('click',function(e){
+            //console.log(e);
+           //},false)
+           //type ,timestamp,defaultprevented
+           //target,toElement,srcElement,currentTarget
+           //clientX,clientY,screenX,screenY
+           //altKey,ctrlKey,shiftKey,keyCode
+           //document.getElementById('images').addEventListener('click',function(e){
+           // console.log("clicked inside the ul");
+          // },false)
+          // document.getElementById('owl').addEventListener('click',function(e){
+            //console.log("owl clicked");
+            //e.stopPropagation();
+           //},false)
+           document.getElementById('river').addEventListener('click',function(e){
+            e.preventDefault();
+            e.stopPropagation();
+            console.log("river clicked");
+           },false)
+
+           document.querySelector('#images').addEventListener('click',function(e){
+           // console.log(e.target.parentNode);
+           console.log(e.target.tagName)
+          if(e.target.tagName ==='IMG'){
+              console.log(e.target.id);
+            }
+           //let removeIt = e.target.parentNode
+            //removeIt.remove()
+            //removeIt.parentNode.removeChild(removeIt)
+           })
+
+        </script>
+        </html>

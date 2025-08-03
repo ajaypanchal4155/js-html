@@ -16,6 +16,9 @@ function User(username,loginCount,isloggedIn){
     this.username = username;
     this.loginCount = loginCount;
     this.isloggedIn= isloggedIn
+    this.greeting = function(){
+        console.log(`welcome ${this.username}`)
+    }
     return this
 }
 const userOne = new User("hitesh",12,true)
